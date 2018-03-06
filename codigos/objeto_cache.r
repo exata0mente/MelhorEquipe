@@ -24,12 +24,11 @@ objeto_cache <- function(obj = NULL, dir=NULL, urlJSON=NULL){
     save(objJSON, file=paste0(dir, nomeObjeto, ".RData"))
     rm(objJSON)
   }
-
+  
   list(nomeObjeto = nomeObjeto,
     obter_objeto = obter_objeto,
     definir_objeto = definir_objeto,
-    criar_objeto = criar_objeto
+    criar_objeto = criar_objeto,
   )
   
 }
-
